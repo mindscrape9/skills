@@ -87,13 +87,7 @@ To use these skills:
 Example:
 
 ```
-Summarise this chapter.
-```
-
-or
-
-```
-Use the summarise skill on this PDF.
+/summarise
 ```
 
 ---
