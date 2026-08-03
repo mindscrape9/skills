@@ -1,62 +1,58 @@
-# AI Skills
+<p align="center">
+  <img src="assets/logo.png" alt="MindScrape" width="280" />
+</p>
 
-A collection of reusable AI skills designed to automate repetitive workflows and improve the quality of AI responses.
+<p align="center">
+  <em>AI updates. IT insights. Future unfolded.</em>
+</p>
 
-These skills are intentionally lightweight, human-readable, and easy to extend. They focus on giving AI models structured responsibilities rather than writing one-off prompts.
+<p align="center">
+  Reusable AI skills for learning, studying, and getting consistent results from any assistant.
+</p>
 
-Whether you're studying, programming, creating content, or managing documents, these skills help you achieve more consistent and reliable results.
-
----
-
-## License
-
-This repository is released under the **MIT License**.
-
-You are free to:
-
-- ✅ Use these skills for personal projects
-- ✅ Use them commercially
-- ✅ Modify them
-- ✅ Share them
-- ✅ Build your own skills from them
-
-Attribution is appreciated but not required by the MIT License.
-
-See the [LICENSE](LICENSE) file for full details.
+<p align="center">
+  <a href="https://github.com/mindscrape9/skills/blob/main/LICENSE">MIT License</a>
+  ·
+  <a href="docs/">Documentation site</a>
+</p>
 
 ---
 
-# Available Skills
+MindScrape is an open collection of **structured AI skills** — human-readable instruction sets that teach an assistant how to perform a specific workflow reliably.
 
-| Skill | Purpose |
-|--------|---------|
-| summarise | Generate faithful summaries from PDF or DOCX documents while preserving the original meaning. |
-| *(More coming soon...)* | |
+Each skill solves one problem well: faithful document summaries, practice questions, revision aids, and more. Skills are platform-agnostic markdown you can copy into Cursor, Claude Projects, ChatGPT custom workflows, or any tool that supports reusable prompts.
 
 ---
 
-# Philosophy
+## Why MindScrape?
 
-Every skill in this repository follows a few simple principles:
+Most AI workflows fail because of one-off prompts. MindScrape skills give models **clear responsibilities**:
 
-- Solve one problem well.
-- Produce consistent outputs.
-- Minimize hallucinations.
-- Preserve user intent.
-- Prefer structured workflows over large prompts.
-- Be easy to read and modify.
+- Structured steps instead of vague requests
+- Consistent output formats
+- Explicit rules that reduce hallucinations
+- Transparent processing reports
+
+Every skill is easy to read, modify, and share.
 
 ---
 
-# How to Use
+## Available skills
 
-## ChatGPT
+| Skill | Description | Docs |
+|-------|-------------|------|
+| [summarise](skills/summarise/) | Faithful, structured summaries from PDF or DOCX — preserves meaning and page references | [README](skills/summarise/README.md) |
 
-If you're using ChatGPT Skills (or custom prompt workflows):
+*More skills coming soon: mcq, flashcards, revise, explain, translate, compare, extract, research, grill-me, tdd, code-review.*
 
-1. Copy the skill into your preferred skills location.
-2. Start a new conversation.
-3. Invoke the skill naturally.
+---
+
+## Quick start
+
+1. **Browse** the [skills/](skills/) directory.
+2. **Open** the skill's `README.md` for usage, options, and examples.
+3. **Copy** the skill folder (including `SKILL.md`) into your AI tool's skills or instructions directory.
+4. **Invoke** the skill by name and follow the workflow.
 
 Example:
 
@@ -64,118 +60,65 @@ Example:
 @summarise
 ```
 
-or
-
-```
-@summarise detailed
-```
-
-Upload your PDF or DOCX and let the skill guide the rest of the workflow.
+Upload a PDF or DOCX, pick a chapter, and choose Short or Long mode.
 
 ---
 
-## Claude
-
-Claude supports reusable prompt files and project instructions.
-
-To use these skills:
-
-1. Copy the skill into your Claude Project.
-2. Save it as a reusable instruction or prompt.
-3. Invoke it naturally during your conversation.
-
-Example:
+## Repository structure
 
 ```
-/summarise
+.
+├── assets/              # Brand logo and visual assets
+├── docs/                # GitHub Pages documentation site
+├── skills/              # All public skills
+│   └── summarise/
+│       ├── SKILL.md     # Agent instructions (for your AI tool)
+│       └── README.md    # Human docs — usage, options, examples
+├── LICENSE
+└── README.md            # This file — MindScrape landing page
 ```
 
 ---
 
-# Example Workflow
+## Philosophy
 
-```
-Upload PDF
-        │
-        ▼
-AI detects document type
-        │
-        ▼
-AI detects chapters
-        │
-        ▼
-Select chapter (if required)
-        │
-        ▼
-Structured summary
-        │
-        ▼
-Processing report
-```
+Every MindScrape skill follows the same principles:
+
+- Solve one problem well
+- Produce consistent outputs
+- Minimize hallucinations
+- Preserve user intent
+- Prefer structured workflows over large prompts
+- Be easy to read and modify
 
 ---
 
-# Contributing
+## Documentation site
 
-Contributions are always welcome.
-
-Ideas include:
-
-- New skills
-- Workflow improvements
-- Better prompts
-- Bug fixes
-- Documentation improvements
-- Performance improvements
-
-If you have an idea that makes a skill more reliable, easier to use, or more maintainable, feel free to open an issue or submit a pull request.
+For a browsable catalog with brand styling, enable [GitHub Pages](https://pages.github.com/) from the `/docs` folder on your default branch. The site lives at `docs/index.md` and links to each skill page.
 
 ---
 
-# Design Goals
+## Contributing
 
-Every skill in this repository should strive to be:
+Contributions are welcome — new skills, workflow improvements, better prompts, bug fixes, and documentation.
 
-- Reliable
-- Reusable
-- Maintainable
-- Transparent
-- Easy to understand
-- Easy to extend
+Open an issue or pull request if you have an idea that makes a skill more reliable, easier to use, or easier to maintain.
 
 ---
 
-# Disclaimer
+## License
 
-These skills help AI models perform specific workflows more consistently.
+Released under the [MIT License](LICENSE). Copyright (c) 2026 MindScrape.
 
-Results still depend on:
-
-- the capabilities of the underlying AI model,
-- the quality of the uploaded documents,
-- and the clarity of the user's request.
-
-Always review AI-generated output before relying on it for academic, professional, legal, or medical purposes.
+You are free to use, modify, and share these skills for personal or commercial projects. Attribution is appreciated but not required.
 
 ---
 
-# Roadmap
+## Disclaimer
 
-Planned skills include:
-
-- summarise
-- mcq
-- flashcards
-- revise
-- explain
-- translate
-- compare
-- extract
-- research
-- grill-me
-- tdd
-- code-review
+MindScrape skills help AI models perform specific workflows more consistently. Results still depend on the underlying model, input quality, and how clearly you invoke the skill. Always review AI-generated output before relying on it for academic, professional, legal, or medical purposes.
 
 ---
 
-Made with ❤️ for the open-source AI community.
+<p align="center">Made with care for the open-source AI community.</p>
