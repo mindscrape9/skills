@@ -1,0 +1,10 @@
+title: MindScrape
+description: Reusable AI skills for learning, studying, and consistent assistant workflows
+theme: jekyll-theme-minimal
+logo: /assets/logo.png
+
+markdown: kramdown
+
+header_pages:
+  - index.md
+  - skills/summarise.md

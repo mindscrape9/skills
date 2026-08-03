@@ -1,7 +1,7 @@
-| name        | summarise                                                                                                    |
-| ----------- | ------------------------------------------------------------------------------------------------------------ |
-| description | Upload a PDF or DOCX and receive a faithful, structured summary in the same language as the source document. |
-| version     | 1.2.0                                                                                                         |
+---
+name: summarise
+description: Upload a PDF or DOCX and receive a faithful, structured summary in the same language as the source document.
+---
 
 # Summarise
 
